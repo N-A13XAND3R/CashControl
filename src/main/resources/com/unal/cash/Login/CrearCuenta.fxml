@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unal.cash.Controller.Login.RegisterController">
+    <children>
+      <Region layoutX="200.0" layoutY="76.0" prefHeight="168.0" prefWidth="516.0" style="-fx-background-color: #BFDBF7; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2; -fx-border-color: #457E93;" />
+      <Region layoutX="119.0" layoutY="523.0" prefHeight="74.0" prefWidth="704.0" style="-fx-background-color: #88c8df; -fx-border-color: #000000;" />
+        <Button layoutX="210.0" layoutY="645.0" mnemonicParsing="false" onAction="#cambioInterfaz" prefHeight="30.0" prefWidth="79.0" style="-fx-background-color: #022B3A;" text="Volver" textFill="WHITE">
+            <font>
+                <Font name="Arial Black" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="641.0" layoutY="645.0" mnemonicParsing="false" onAction="#cambioSoporte" prefHeight="30.0" prefWidth="79.0" style="-fx-background-color: #022B3A;" text="Soporte" textFill="#f4f4f4">
+            <font>
+                <Font name="Arial Black" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="338.0" layoutY="14.0" text="Crear cuenta">
+            <font>
+                <Font name="Arial Black" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="210.0" layoutY="89.0" text="Usuario:">
+            <font>
+                <Font name="Arial Black" size="12.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnContinueSignup" contentDisplay="CENTER" layoutX="396.0" layoutY="614.0" mnemonicParsing="false" onAction="#continuarRegistro" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #022B3A;" text="Continuar" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Arial Black" size="12.0" />
+            </font>
+        </Button>
+        <PasswordField fx:id="pfNewPassword" layoutX="563.0" layoutY="85.0" prefHeight="25.0" prefWidth="130.0" />
+        <Label layoutX="463.0" layoutY="89.0" text="Contraseña:">
+            <font>
+                <Font name="Arial Black" size="12.0" />
+            </font>
+        </Label>
+        <TextField fx:id="tfNewUser" layoutX="283.0" layoutY="85.0" prefHeight="25.0" prefWidth="130.0" />
+        <BorderPane layoutX="741.0" layoutY="175.0" prefHeight="528.0" prefWidth="158.0" style="-fx-background-color: #457E93;">
+            <effect>
+                <DropShadow height="39.86" radius="19.465" spread="0.3" width="40.0" />
+            </effect>
+        </BorderPane>
+        <BorderPane layoutX="-25.0" layoutY="-83.0" prefHeight="254.0" prefWidth="150.0" style="-fx-background-color: #5CC9DE; -fx-rotate: 45;">
+            <effect>
+                <DropShadow radius="13.5" spread="0.3" width="35.0" />
+            </effect>
+        </BorderPane>
+        <BorderPane layoutY="275.0" prefHeight="422.0" prefWidth="176.0" style="-fx-background-color: #BFDBF7; -fx-rotate: 0;">
+            <effect>
+                <DropShadow radius="13.5" spread="0.2" width="35.0" />
+            </effect>
+        </BorderPane>
+      <Label layoutX="210.0" layoutY="130.0" text="Nombre:">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfNombre" layoutX="283.0" layoutY="126.0" prefHeight="25.0" prefWidth="130.0" />
+      <Label layoutX="217.0" layoutY="167.0" text="Email:">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfEmail" layoutX="283.0" layoutY="163.0" prefHeight="25.0" prefWidth="130.0" />
+      <Label layoutX="471.0" layoutY="130.0" text="Apellidos:">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfApellido" layoutX="563.0" layoutY="126.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="tfTelefono" layoutX="563.0" layoutY="163.0" prefHeight="25.0" prefWidth="130.0" />
+      <Label layoutX="472.0" layoutY="167.0" text="Teléfono:">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="194.0" layoutY="201.0" prefHeight="30.0" prefWidth="87.0" text="Ingresos mensuales:" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Arial Black" size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfIngresosmensuales" layoutX="283.0" layoutY="203.0" prefHeight="25.0" prefWidth="130.0" />
+      <Label layoutX="456.0" layoutY="201.0" prefHeight="30.0" prefWidth="94.0" text="Metodo de pago más usado:" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Arial Black" size="10.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="cbMetoPago" layoutX="563.0" layoutY="203.0" prefHeight="26.0" prefWidth="130.0" />
+      <Label layoutX="300.0" layoutY="253.0" text="Gastos recurrentes">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Label>
+      <Region layoutX="206.0" layoutY="308.0" prefHeight="90.0" prefWidth="153.0" style="-fx-background-color: #BFDBF7; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2; -fx-border-color: #457E93;" />
+      <Label layoutX="236.0" layoutY="317.0" text="Transporte:">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfTransporte" layoutX="218.0" layoutY="353.0" prefHeight="25.0" prefWidth="130.0" />
+      <Region layoutX="389.0" layoutY="308.0" prefHeight="90.0" prefWidth="153.0" style="-fx-background-color: #BFDBF7; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2; -fx-border-color: #457E93;">
+         <effect>
+            <InnerShadow height="0.0" radius="0.0" width="0.0" />
+         </effect>
+      </Region>
+      <Label layoutX="409.0" layoutY="317.0" text="Alimentación:">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfAlimentacion" layoutX="401.0" layoutY="353.0" prefHeight="25.0" prefWidth="130.0" />
+      <Region layoutX="563.0" layoutY="308.0" prefHeight="90.0" prefWidth="153.0" style="-fx-background-color: #BFDBF7; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2; -fx-border-color: #457E93;" />
+      <Label layoutX="599.0" layoutY="317.0" text="Servicios:">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfServicios" layoutX="576.0" layoutY="353.0" prefHeight="25.0" prefWidth="130.0" />
+      <Region layoutX="206.0" layoutY="411.0" prefHeight="90.0" prefWidth="154.0" style="-fx-background-color: #BFDBF7; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2; -fx-border-color: #457E93;" />
+      <Label layoutX="237.0" layoutY="422.0" text="Educación:">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfEducacion" layoutX="218.0" layoutY="456.0" prefHeight="25.0" prefWidth="130.0" />
+      <Region layoutX="389.0" layoutY="412.0" prefHeight="90.0" prefWidth="153.0" style="-fx-background-color: #BFDBF7; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2; -fx-border-color: #457E93;" />
+      <Label layoutX="397.0" layoutY="423.0" text="Entretenimiento:">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfEntretenimiento" layoutX="401.0" layoutY="457.0" prefHeight="25.0" prefWidth="130.0" />
+      <Region layoutX="563.0" layoutY="412.0" prefHeight="90.0" prefWidth="153.0" style="-fx-background-color: #BFDBF7; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2; -fx-border-color: #457E93;" />
+      <Label layoutX="603.0" layoutY="423.0" text="Personal:">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfPersonal" layoutX="576.0" layoutY="457.0" prefHeight="25.0" prefWidth="130.0" />
+      <Label layoutX="327.0" layoutY="530.0" text="Seleccione su perfil de consumo:">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="cbPerfilConsumo" layoutX="386.0" layoutY="560.0" prefWidth="150.0" />
+    </children>
+   <opaqueInsets>
+      <Insets top="10.0" />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

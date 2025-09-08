@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="304.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unal.cash.Controller.PerfilConsumo.PerfildeConsumoController">
+   <children>
+      <Label layoutX="108.0" layoutY="82.0" prefHeight="94.0" prefWidth="382.0" text="¡Su perfil de consumo ha sido actualizado!" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Arial Black" size="32.0" />
+         </font>
+      </Label>
+      <Button layoutX="251.0" layoutY="202.0" mnemonicParsing="false" onAction="#cambioInterfaz" prefHeight="26.0" prefWidth="97.0" style="-fx-background-color: #022B3A; -fx-background-radius: 10;" text="Inicio" textFill="WHITE" />
+      <Region layoutX="238.0" layoutY="263.0" prefHeight="114.0" prefWidth="122.0" style="-fx-background-color: #022B3A; -fx-background-radius: 60; -fx-rotate: 90;" AnchorPane.bottomAnchor="-73.39999999999998">
+         <effect>
+            <DropShadow radius="20.5275" width="63.11" />
+         </effect>
+      </Region>
+      <Region layoutX="239.0" layoutY="-76.0" prefHeight="114.0" prefWidth="122.0" style="-fx-background-color: #022B3A; -fx-background-radius: 60; -fx-rotate: 90;">
+         <effect>
+            <DropShadow radius="21.1125" width="65.45" />
+         </effect>
+      </Region>
+      <Region prefHeight="304.0" prefWidth="66.0" style="-fx-background-color: #229FB8;">
+         <effect>
+            <DropShadow radius="17.6025" width="51.41" />
+         </effect>
+      </Region>
+      <Region layoutX="533.0" prefHeight="304.0" prefWidth="75.0" style="-fx-background-color: #229FB8;" AnchorPane.rightAnchor="-8.0">
+         <effect>
+            <DropShadow height="39.13" radius="22.134999999999998" width="51.41" />
+         </effect>
+      </Region>
+   </children>
+</AnchorPane>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.2414658634538153" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="600.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unal.cash.Controller.Login.RegisterController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="650.0" style="-fx-background-color: #BFDBF7;">
+         <children>
+            <Label layoutX="102.0" layoutY="30.0" text="Gastos recurrentes">
+               <font>
+                  <Font name="Arial Black" size="42.0" />
+               </font>
+            </Label>
+            <Region layoutX="224.0" layoutY="-24.0" prefHeight="46.0" prefWidth="200.0" style="-fx-background-color: #022B3A; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <effect>
+                  <DropShadow height="24.51" radius="11.4625" spread="0.02" width="23.34" />
+               </effect>
+            </Region>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="649.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Region layoutX="25.0" layoutY="24.0" prefHeight="90.0" prefWidth="153.0" style="-fx-background-color: #BFDBF7; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2; -fx-border-color: #457E93;" />
+            <Region layoutX="247.0" layoutY="24.0" prefHeight="90.0" prefWidth="153.0" style="-fx-background-color: #BFDBF7; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2; -fx-border-color: #457E93;">
+               <effect>
+                  <InnerShadow height="0.0" radius="0.0" width="0.0" />
+               </effect>
+            </Region>
+            <Region layoutX="469.0" layoutY="24.0" prefHeight="90.0" prefWidth="153.0" style="-fx-background-color: #BFDBF7; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2; -fx-border-color: #457E93;" />
+            <Region layoutX="25.0" layoutY="146.0" prefHeight="90.0" prefWidth="154.0" style="-fx-background-color: #BFDBF7; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2; -fx-border-color: #457E93;" />
+            <Region layoutX="247.0" layoutY="146.0" prefHeight="90.0" prefWidth="153.0" style="-fx-background-color: #BFDBF7; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2; -fx-border-color: #457E93;" />
+            <Region layoutX="469.0" layoutY="146.0" prefHeight="90.0" prefWidth="153.0" style="-fx-background-color: #BFDBF7; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2; -fx-border-color: #457E93;" />
+            <Region layoutX="-18.0" layoutY="247.0" prefHeight="74.0" prefWidth="704.0" style="-fx-background-color: #88c8df; -fx-border-color: #000000;" />
+            <Label layoutX="54.0" layoutY="33.0" text="Transporte:">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="267.0" layoutY="33.0" text="Alimentación:">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="505.0" layoutY="33.0" text="Servicios:">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="56.0" layoutY="157.0" text="Educación:">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="255.0" layoutY="157.0" text="Entretenimiento:">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="509.0" layoutY="157.0" text="Personal:">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfTransporte" layoutX="36.0" layoutY="69.0" prefHeight="25.0" prefWidth="130.0" />
+            <TextField fx:id="tfAlimentacion" layoutX="259.0" layoutY="69.0" prefHeight="25.0" prefWidth="130.0" />
+            <TextField fx:id="tfServicios" layoutX="482.0" layoutY="69.0" prefHeight="25.0" prefWidth="130.0" />
+            <TextField fx:id="tfEntretenimiento" layoutX="259.0" layoutY="191.0" prefHeight="25.0" prefWidth="130.0" />
+            <TextField fx:id="tfEducacion" layoutX="37.0" layoutY="191.0" prefHeight="25.0" prefWidth="130.0" />
+            <TextField fx:id="tfPersonal" layoutX="482.0" layoutY="191.0" prefHeight="25.0" prefWidth="130.0" />
+            <Region layoutX="78.0" layoutY="336.0" prefHeight="54.0" prefWidth="154.0" style="-fx-background-color: #022B3A; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <effect>
+                  <DropShadow height="35.2" radius="16.8075" spread="0.04" width="34.03" />
+               </effect>
+            </Region>
+            <Region layoutX="432.0" layoutY="336.0" prefHeight="54.0" prefWidth="154.0" style="-fx-background-color: #022B3A; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <effect>
+                  <DropShadow spread="0.04" />
+               </effect>
+            </Region>
+            <Button layoutX="104.0" layoutY="350.0" mnemonicParsing="false" onAction="#cambioCrearCuenta" prefWidth="102.0" style="-fx-background-color: #457E93;" text="Volver" textFill="WHITE" />
+            <Button layoutX="458.0" layoutY="350.0" mnemonicParsing="false" onAction="#guardarGastos" prefWidth="102.0" style="-fx-background-color: #457E93;" text="Continuar" textFill="WHITE" />
+            <Label layoutX="190.0" layoutY="254.0" text="Seleccione su perfil de consumo:">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+
+            <ChoiceBox fx:id="cbPerfilConsumo" layoutX="249.0" layoutY="284.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+  </items>
+   <effect>
+      <InnerShadow />
+   </effect>
+</SplitPane>

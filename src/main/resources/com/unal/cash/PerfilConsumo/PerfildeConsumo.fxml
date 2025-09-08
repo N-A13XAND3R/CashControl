@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unal.cash.Controller.PerfilConsumo.PerfildeConsumoController">
+   <children>
+      <Region layoutX="-1.0" layoutY="168.0" prefHeight="155.0" prefWidth="600.0" style="-fx-background-color: #457E93; -fx-border-color: #022B3A;" AnchorPane.bottomAnchor="76.80000000000001" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Region>
+      <Label layoutX="142.0" layoutY="24.0" text="Perfil de consumo" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Black" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="labConsumoActual" layoutX="161.0" layoutY="72.0" prefHeight="38.0" prefWidth="277.0" text="Perfil de consumo actual: Gasto dinero todos los dias entre 20.000 - 50.000" textAlignment="CENTER" textFill="#1f7a8c" wrapText="true">
+         <font>
+            <Font name="Arial Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="138.0" text="Selecciona el perfil de consumo que más se ajuste a tu situación:" textFill="#1f7a8c">
+         <font>
+            <Font name="Arial Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="bt_const" layoutX="96.0" layoutY="179.0" mnemonicParsing="false" onAction="#set_gconst" prefHeight="58.0" prefWidth="164.0" style="-fx-background-color: #BFDBF7; -fx-border-radius: 15; -fx-background-radius: 15; -fx-border-color: #022B3A;" text="Constante" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="bt_finDeSemG" layoutX="350.0" layoutY="179.0" mnemonicParsing="false" onAction="#set_gfindeg" prefHeight="58.0" prefWidth="164.0" style="-fx-background-color: #BFDBF7; -fx-border-radius: 15; -fx-background-radius: 15; -fx-border-color: #022B3A;" text="Fin de semana gastador" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Arial Italic" size="12.0" />
+         </font>
+      </Button>
+      <Region prefHeight="15.0" prefWidth="605.0" style="-fx-background-color: #229FB8;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Region>
+      <Region layoutX="-1.0" layoutY="386.0" prefHeight="15.0" prefWidth="606.0" style="-fx-background-color: #229FB8;" AnchorPane.bottomAnchor="-1.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Region>
+      <Button layoutX="432.0" layoutY="342.0" mnemonicParsing="false" onAction="#CambiarContinuar" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #022B3A; -fx-background-radius: 10;" text="Continuar" textFill="WHITE" />
+      <Button layoutX="87.0" layoutY="342.0" mnemonicParsing="false" onAction="#cambioInterfaz" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #022B3A; -fx-background-radius: 10;" text="Volver" textFill="WHITE" />
+      <Button fx:id="bt_entreSemG" layoutX="96.0" layoutY="250.0" mnemonicParsing="false" onAction="#set_gentresemg" prefHeight="58.0" prefWidth="164.0" style="-fx-background-color: #BFDBF7; -fx-border-radius: 15; -fx-background-radius: 15; -fx-border-color: #022B3A;" text="Entre semana gastador" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="bt_viernesG" layoutX="350.0" layoutY="249.0" mnemonicParsing="false" onAction="#set_gviernesg" prefHeight="58.0" prefWidth="164.0" style="-fx-background-color: #BFDBF7; -fx-border-radius: 15; -fx-background-radius: 15; -fx-border-color: #022B3A;" text="Viernes gastador" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Arial Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="103.0" layoutY="184.0" text="(1)" />
+      <Label layoutX="356.0" layoutY="184.0" prefWidth="21.0" text="(2)" />
+      <Label layoutX="103.0" layoutY="254.0" text="(3)" />
+      <Label layoutX="356.0" layoutY="254.0" text="(4)" />
+
+   </children>
+</AnchorPane>

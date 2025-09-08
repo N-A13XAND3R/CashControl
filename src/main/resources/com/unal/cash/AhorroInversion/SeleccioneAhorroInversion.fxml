@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="477.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unal.cash.Controller.AhorroInversion.AhorroInversionController">
+   <children>
+      <Region layoutY="14.0" prefHeight="59.0" prefWidth="600.0" style="-fx-background-color: #128D2D;" AnchorPane.bottomAnchor="404.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0" />
+      <Region layoutX="-58.0" layoutY="29.0" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #F8D107; -fx-background-radius: 20;" />
+      <Region layoutX="514.0" layoutY="29.0" prefHeight="30.0" prefWidth="146.0" style="-fx-background-color: #F8D107; -fx-background-radius: 20;" AnchorPane.rightAnchor="-17.0" />
+      <Label layoutX="153.0" layoutY="22.0" prefHeight="38.0" prefWidth="327.0" text="Seleccione un activo" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="250.0" layoutY="436.0" mnemonicParsing="false" onAction="#cambioInterfaz" prefHeight="26.0" prefWidth="133.0" style="-fx-background-color: #022B3A; -fx-background-radius: 15;" text="Volver" textFill="WHITE" />
+      <LineChart axisSortingPolicy="Y_AXIS" layoutX="53.0" layoutY="106.0" legendSide="TOP" onMouseReleased="#CambiarSP500" prefHeight="103.0" prefWidth="146.0" title="S&amp;P 500">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <LineChart layoutX="373.0" layoutY="106.0" onMouseReleased="#CambiarOro" prefHeight="93.0" prefWidth="66.0" title="Oro">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <LineChart layoutX="53.0" layoutY="257.0" onMouseReleased="#CambiarNasdaq" prefHeight="93.0" prefWidth="66.0" title="Nasdaq">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </LineChart>
+      <LineChart layoutX="380.0" layoutY="257.0" onMouseReleased="#CambiarBitcoin" prefHeight="93.0" prefWidth="66.0" title="Bitcoin">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>

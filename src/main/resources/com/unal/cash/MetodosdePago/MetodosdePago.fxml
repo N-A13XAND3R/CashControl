@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unal.cash.Controller.MetodosdePago.MetodosdePagoController">
+   <children>
+      <Region layoutY="-11.0" prefHeight="43.0" prefWidth="600.0" style="-fx-background-color: #022B3A;" />
+      <Label layoutX="164.0" layoutY="47.0" text="Métodos de pago" textFill="#022b3a">
+         <font>
+            <Font name="Arial Black" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="118.0" text="Por favor selecciona el método de pago:" textFill="#1f7a8c">
+         <font>
+            <Font name="Arial Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btEfectivo" layoutX="109.0" layoutY="170.0" mnemonicParsing="false" onAction="#cambiarEfectivo" prefHeight="51.0" prefWidth="110.0" style="-fx-background-color: BFDBF7; -fx-background-radius: 10; -fx-border-color: #022B3A; -fx-border-radius: 10;" text="Efectivo" textFill="#022b3a" />
+      <Button fx:id="btTarjetaDebito" layoutX="380.0" layoutY="170.0" mnemonicParsing="false" onAction="#cambiarTarjetaDebito" prefHeight="51.0" prefWidth="110.0" style="-fx-background-color: BFDBF7; -fx-background-radius: 10; -fx-border-color: #022B3A; -fx-border-radius: 10;" text="Tarjeta de débito" textAlignment="CENTER" textFill="#022b3a" wrapText="true" />
+      <Button fx:id="btTransaccionAplicacion" layoutX="109.0" layoutY="251.0" mnemonicParsing="false" onAction="#cambiarTransaccionAplicacion" prefHeight="51.0" prefWidth="110.0" style="-fx-background-color: BFDBF7; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #022B3A;" text="Transacción por aplicación" textAlignment="CENTER" textFill="#022b3a" wrapText="true" />
+      <Button fx:id="btTarjetaCredito" layoutX="380.0" layoutY="251.0" mnemonicParsing="false" onAction="#cambiarTarjetaCredito" prefHeight="51.0" prefWidth="110.0" style="-fx-background-color: BFDBF7; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #022B3A;" text="Tarjeta de crédito" textAlignment="CENTER" textFill="#022b3a" wrapText="true" />
+      <Button layoutX="245.0" layoutY="329.0" mnemonicParsing="false" onAction="#cambioInterfaz" prefHeight="22.0" prefWidth="110.0" style="-fx-background-color: #022B3A; -fx-background-radius: 10;" text="Volver" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Region layoutX="-24.0" layoutY="307.0" prefHeight="122.0" prefWidth="145.0" style="-fx-background-color: #457E93; -fx-background-radius: 25; -fx-rotate: 45;" AnchorPane.bottomAnchor="-29.399999999999977" AnchorPane.leftAnchor="-24.0">
+         <rotationAxis>
+            <Point3D x="10.0" y="10.0" z="1.0" />
+         </rotationAxis>
+      </Region>
+   </children>
+</AnchorPane>

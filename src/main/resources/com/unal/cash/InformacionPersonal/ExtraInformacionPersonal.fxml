@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="568.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unal.cash.Controller.InformacionPersonal.ExtraInformacionPersonalController">
+      <Region layoutX="203.0" layoutY="-9.0" prefHeight="62.0" prefWidth="493.0" style="-fx-background-color: #022B3A; -fx-background-radius: 40;" />
+      <Label layoutX="314.0" layoutY="14.0" text="Información Personal" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Label>
+      <Region layoutX="-17.6" layoutY="81.0" prefHeight="393.0" prefWidth="921.0" style="-fx-background-color: #6cbbc9; -fx-background-radius: 45;" AnchorPane.leftAnchor="-18.0" AnchorPane.rightAnchor="-3.0" />
+      <Label layoutX="223.0" layoutY="113.0" text="Ahorro mensual">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_ahorromensual" editable="false" layoutX="400.0" layoutY="114.0" />
+      <Button fx:id="bt_volver" layoutX="395.0" layoutY="509.0" mnemonicParsing="false" onAction="#cambioInterfaz" prefHeight="32.0" prefWidth="110.0" style="-fx-background-color: #022B3A;" text="Volver" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font>
+      </Button>
+   <Label layoutX="207.0" layoutY="152.0" text="Inversion mensual">
+      <font>
+         <Font name="Arial Black" size="18.0" />
+      </font>
+   </Label>
+   <TextField fx:id="txt_inversionmensual" editable="false" layoutX="400.0" layoutY="153.0" />
+   <Label layoutX="138.0" layoutY="261.0" text="Distribucion mensual semanal de gastos (presupuesto diario)">
+      <font>
+         <Font name="Arial Black" size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="48.0" layoutY="332.0" text="Lunes">
+      <font>
+         <Font name="Arial Black" size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="170.0" layoutY="332.0" text="Martes">
+      <font>
+         <Font name="Arial Black" size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="290.0" layoutY="332.0" text="Miercoles">
+      <font>
+         <Font name="Arial Black" size="18.0" />
+      </font>
+   </Label>
+   <TextField fx:id="txt_jueves" editable="false" layoutX="400.0" layoutY="370.0" prefHeight="24.0" prefWidth="118.0" />
+   <Label layoutX="424.0" layoutY="331.0" text="Jueves">
+      <font>
+         <Font name="Arial Black" size="18.0" />
+      </font>
+   </Label>
+   <TextField fx:id="txt_sabado" editable="false" layoutX="649.0" layoutY="369.0" prefHeight="24.0" prefWidth="110.0" />
+   <Label layoutX="659.0" layoutY="332.0" text="Sabado">
+      <font>
+         <Font name="Arial Black" size="18.0" />
+      </font>
+   </Label>
+   <TextField fx:id="txt_domingo" editable="false" layoutX="771.0" layoutY="369.0" prefHeight="24.0" prefWidth="103.0" />
+   <Label layoutX="779.0" layoutY="332.0" text="Domingo">
+      <font>
+         <Font name="Arial Black" size="18.0" />
+      </font>
+   </Label>
+   <TextField fx:id="txt_lunes" editable="false" layoutX="12.0" layoutY="369.0" prefHeight="24.0" prefWidth="118.0" />
+   <TextField fx:id="txt_martes" editable="false" layoutX="138.0" layoutY="369.0" prefHeight="24.0" prefWidth="118.0" />
+   <TextField fx:id="txt_miercoles" editable="false" layoutX="268.0" layoutY="369.0" prefHeight="24.0" prefWidth="118.0" />
+   <TextField fx:id="txt_viernes" editable="false" layoutX="528.0" layoutY="370.0" prefHeight="24.0" prefWidth="110.0" />
+   <Label layoutX="542.0" layoutY="331.0" text="Viernes">
+      <font>
+         <Font name="Arial Black" size="18.0" />
+      </font>
+   </Label>
+
+</AnchorPane>

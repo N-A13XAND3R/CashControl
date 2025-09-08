@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unal.cash.Controller.MetodosdePago.MetodosdePagoController">
+   <children>
+      <Label layoutX="55.0" layoutY="42.0" text="Actualización de métodos de pago">
+         <font>
+            <Font name="Arial Black" size="26.0" />
+         </font>
+      </Label>
+      <Region layoutX="50.0" layoutY="161.0" prefHeight="303.0" prefWidth="500.0" style="-fx-background-color: #E1E5F2; -fx-background-radius: 20;" AnchorPane.bottomAnchor="-9.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Region>
+      <Region layoutX="-70.0" layoutY="300.0" prefHeight="180.0" prefWidth="198.0" style="-fx-background-color: #5CC9DE; -fx-rotate: 45; -fx-background-radius: 45;" AnchorPane.bottomAnchor="-100.0" AnchorPane.leftAnchor="-70.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Region>
+      <Region layoutX="494.0" layoutY="310.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #5CC9DE; -fx-rotate: 45; -fx-background-radius: 45;" AnchorPane.bottomAnchor="-110.0" AnchorPane.rightAnchor="-94.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Region>
+      <Button layoutX="198.0" layoutY="296.0" mnemonicParsing="false" onAction="#ActualizarCaracteristicasPago" prefHeight="35.0" prefWidth="203.0" style="-fx-background-color: #022B3A;" text="Actualizar características de pago" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <TextField fx:id="txtCostoPorTransaccion" alignment="BASELINE_RIGHT" layoutX="339.0" layoutY="125.0" promptText="\%" />
+      <TextField fx:id="txtCashBack" alignment="BASELINE_RIGHT" layoutX="339.0" layoutY="163.0" promptText="\%" />
+      <TextField fx:id="txtIntereses" alignment="BASELINE_RIGHT" layoutX="339.0" layoutY="200.0" promptText="\%" />
+      <TextField fx:id="txt_descuento" alignment="BASELINE_RIGHT" layoutX="339.0" layoutY="241.0" promptText="\%" />
+      <Button layoutX="261.0" layoutY="359.0" mnemonicParsing="false" onAction="#cambioMetodosdePago" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: #022B3A;" text="Volver" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label layoutX="143.0" layoutY="128.0" text="Costo por transacción:" textFill="#1f7a8c">
+         <font>
+            <Font name="Arial Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="166.0" text="Cashback:" textFill="#1f7a8c">
+         <font>
+            <Font name="Arial Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="146.0" layoutY="203.0" text="Intereses:" textFill="#1f7a8c">
+         <font>
+            <Font name="Arial Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="140.0" layoutY="244.0" text="Descuento:" textFill="#1f7a8c">
+         <font>
+            <Font name="Arial Bold Italic" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

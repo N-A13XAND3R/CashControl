@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="477.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unal.cash.Controller.AgregarTransaccion.AgregarTransaccionController">
+
+   <children>
+      <Region prefHeight="428.0" prefWidth="70.0" style="-fx-background-color: #457E93;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Region>
+      <Region layoutX="530.0" prefHeight="428.0" prefWidth="70.0" style="-fx-background-color: #457E93;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Region>
+      <Label layoutX="128.0" layoutY="53.0" text="Agregar Transacción" textFill="#022b3a">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_costo_transaccion" layoutX="331.0" layoutY="331.0" />
+      <ChoiceBox fx:id="cbTipoTransaccion" layoutX="331.0" layoutY="139.0" prefHeight="24.0" prefWidth="171.0" />
+      <Label layoutX="98.0" layoutY="140.0" text="Tipo de transacción:" textFill="#1f7a8c">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="332.0" text="Costo de la transacción" textFill="#1f7a8c">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btGuardarTransaccion" layoutX="247.0" layoutY="428.0" mnemonicParsing="false" onAction="#GuardarTransaccion" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #022B3A;" text="Guardar transacción" textFill="WHITE" />
+      <Button layoutX="94.0" layoutY="428.0" mnemonicParsing="false" onAction="#cambioInterfaz" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #022B3A;" text="Volver" textFill="WHITE" />
+      <Label layoutX="99.0" layoutY="368.0" text="Fecha (por defecto: hoy)" textFill="#1f7a8c">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dt_fecha" layoutX="332.0" layoutY="367.0" prefHeight="24.0" prefWidth="171.0" />
+      <Label layoutX="105.0" layoutY="183.0" text="Monto de la transacción" textFill="#1f7a8c">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_monto" layoutX="331.0" layoutY="182.0" />
+      <Label layoutX="104.0" layoutY="222.0" text="Intereses %" textFill="#1f7a8c">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_intereses" layoutX="331.0" layoutY="221.0" />
+      <TextField fx:id="txt_descuento" layoutX="331.0" layoutY="297.0" />
+      <TextField fx:id="txt_cashback" layoutX="331.0" layoutY="257.0" />
+      <Label layoutX="102.0" layoutY="258.0" text="CashBack %" textFill="#1f7a8c">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="298.0" text="Descuento %" textFill="#1f7a8c">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
